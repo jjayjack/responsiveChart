@@ -1,10 +1,27 @@
+/* universal CSS styling */
 *{
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(202, 205, 245);
     --primary: rgb(0, 0, 255);
     --secondary: rgb(255, 0, 0); 
 }
+
+/* header styling */
+h1{
+    color: var(--primary);
+    text-align:center;
+    text-shadow: var(--secondary);
+    font-variant-caps:petite-caps;
+}
+
+.headerP{
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* grid */
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -17,14 +34,19 @@
 card {
     background-color: var(--primary);
     border: 2px solid var(--secondary);
-    padding: 20px 10px 10px 10px;
-    /* justify-content: space-evenly; */
+    padding: 20px 10px 60px 10px;
     text-align: center;
+
 }
 #one, #two, #three {
     justify-content: space-evenly;
 }
+img{
+    width:22vh;
+    height: 7vh;
+}
+.image {
+    /* background-image: url(""); */
+    background-color: var(--secondary);
 
-img {
-    background-image: url("");
 }
